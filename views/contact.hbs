@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Node Mailer</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <script src="https://kit.fontawesome.com/5c922d39d1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="brand"><span>Arbisoft</span> Web Design</h1>
+    <div class="wrapper animated bounceInLeft">
+      <div class="company-info">
+        <h3>Arbisoft Web Design</h3>
+        <ul>
+          <li><i class="fa-solid fa-road fa-l"></i> 25 Canal Rd, Westwood Colony Lahore, Punjab 54000</li>
+          <li><i class="fa-solid fa-phone fa-l"></i> (042) 37498533</li>
+          <li><i class="fa-solid fa-envelope fa-l"></i> jeffry50@ethereal.email</li>
+        </ul>
+      </div>
+      <div class="contact">
+        <h3>Email Us</h3>
+        {{msg}}
+        <form method="POST" action="send">
+          <p>
+            <label>Name</label>
+            <input type="text" name="name">
+          </p>
+          <p>
+            <label>Company</label>
+            <input type="text" name="company">
+          </p>
+          <p>
+            <label>Email Address</label>
+            <input type="email" name="email">
+          </p>
+          <p>
+            <label>Phone Number</label>
+            <input type="text" name="phone">
+          </p>
+          <p class="full">
+            <label>Message</label>
+            <textarea name="message" rows="5"></textarea>
+          </p>
+          <p class="full">
+            <button type="submit">Submit</button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
